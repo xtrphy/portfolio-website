@@ -2,7 +2,7 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import React, { useRef } from 'react';
 import Image from 'next/image';
 import { Badge } from './ui/badge';
-import { Check, CircleCheck } from 'lucide-react';
+import { CircleCheck } from 'lucide-react';
 
 const HomeSection = () => {
     const ref = useRef(null);
