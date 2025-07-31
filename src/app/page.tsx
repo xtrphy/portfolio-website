@@ -1,7 +1,8 @@
 'use client';
 
 import HomeSection from '@/components/HomeSection';
-import SecondSection from '@/components/SecondSection';
+import ProjectsSection from '@/components/ProjectsSection';
+import SecondSection from '@/components/StackSection';
 import { motion } from 'framer-motion';
 
 const Home = () => {
@@ -14,6 +15,7 @@ const Home = () => {
         >
             <HomeSection />
             <SecondSection />
+            <ProjectsSection />
         </motion.main>
     );
 };

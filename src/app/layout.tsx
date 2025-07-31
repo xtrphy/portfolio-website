@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Manrope } from "next/font/google";
 import "./globals.css";
-import CustomCursor from "@/components/CustomCursor";
-import LenisWrapper from "@/components/LenisWrapper";
-import ParticlesBackground from "@/components/ParticlesBackground";
+import CustomCursor from "@/components/custom/CustomCursor";
+import LenisWrapper from "@/components/custom/LenisWrapper";
+import ParticlesBackground from "@/components/custom/ParticlesBackground";
 
 const manrope = Manrope({
     variable: "--font-manrope",
