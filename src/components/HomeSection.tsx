@@ -2,7 +2,7 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import React, { useRef } from 'react';
 import Image from 'next/image';
 import { Badge } from './ui/badge';
-import { CircleCheck } from 'lucide-react';
+import { CircleCheck, MapPin } from 'lucide-react';
 
 const HomeSection = () => {
     const ref = useRef(null);
@@ -22,20 +22,21 @@ const HomeSection = () => {
             >
                 <div className='ml-[120px] flex flex-col gap-10 text-7xl'>
                     <h1 className='italic font-black'>
-                        Владислав Перепечкин
+                        <span>Владислав Перепечкин</span>
+
                         <motion.div
                             style={{ y }}
                         >
-                            <Badge className='absolute -top-13 -right-25 -rotate-2 text-base bg-white/10 backdrop-blur-sm text-[#444] border border-white/30 shadow-md px-4 py-1 rounded-xl ring-1 ring-white/20 hover:-rotate-4 hover:scale-103 hover:ring-black transition-all duration-200'>
+                            <Badge className='absolute -top-15 -right-25 -rotate-2 text-base bg-white/10 backdrop-blur-sm text-[#444] border border-white/30 shadow-md px-4 py-1 rounded-xl ring-1 ring-white/20 hover:-rotate-4 hover:scale-103 hover:ring-black transition-all duration-200'>
                                 фронтенд разработчик
                             </Badge>
-                            <Badge className='absolute -top-3 -right-25 -rotate-2 text-base bg-white/10 backdrop-blur-sm text-[#444] border border-white/30 shadow-md px-4 py-1 rounded-xl ring-1 ring-white/20 hover:-rotate-4 hover:scale-103 hover:ring-black transition-all duration-200'>
-                                внимание к деталям
+                            <Badge className='absolute -top-5 -right-25 -rotate-2 text-base bg-white/10 backdrop-blur-sm text-[#444] border border-white/30 shadow-md px-4 py-1 rounded-xl ring-1 ring-white/20 hover:rotate-0 hover:scale-103 hover:ring-black transition-all duration-200'>
+                                довольный клиент
                             </Badge>
-                            <Badge className='absolute top-7 -right-25 -rotate-2 text-base bg-white/10 backdrop-blur-sm text-[#444] border border-white/30 shadow-md px-4 py-1 rounded-xl ring-1 ring-white/20 hover:-rotate-4 hover:scale-103 hover:ring-black transition-all duration-200'>
+                            <Badge className='absolute top-5 -right-25 -rotate-2 text-base bg-white/10 backdrop-blur-sm text-[#444] border border-white/30 shadow-md px-4 py-1 rounded-xl ring-1 ring-white/20 hover:-rotate-4 hover:scale-103 hover:ring-black transition-all duration-200'>
                                 командная работа
                             </Badge>
-                            <Badge className='absolute top-17 -right-25 -rotate-2 text-base bg-white/10 backdrop-blur-sm text-[#444] border border-white/30 shadow-md px-4 py-1 rounded-xl ring-1 ring-white/20 hover:-rotate-4 hover:scale-103 hover:ring-black transition-all duration-200'>
+                            <Badge className='absolute top-15 -right-25 -rotate-2 text-base bg-white/10 backdrop-blur-sm text-[#444] border border-white/30 shadow-md px-4 py-1 rounded-xl ring-1 ring-white/20 hover:rotate-0 hover:scale-103 hover:ring-black transition-all duration-200'>
                                 ответственность
                             </Badge>
                         </motion.div>
@@ -53,10 +54,14 @@ const HomeSection = () => {
                         </li>
                     </ul>
 
-                    <div className='flex gap-3 mt-5'>
-                        <button className='text-lg font-semibold w-52 p-4 bg-[#444]/85 text-[#cfcfcf] hover:text-[#fff] cursor-none rounded-full hover:bg-[#444] hover:scale-[1.03] transition-all duration-200'>
-                            Связаться
-                        </button>
+                    <div className='flex items-start gap-3 mt-5'>
+                        <div className='flex flex-col items-center gap-2'>
+                            <button className='text-lg font-semibold w-52 p-4 bg-[#444]/85 text-[#cfcfcf] hover:text-[#fff] cursor-none rounded-full hover:bg-[#444] hover:scale-[1.03] transition-all duration-200'>
+                                Связаться
+                            </button>
+                            <span className='flex items-center gap-1 text-sm font-bold text-[#444]'><MapPin size={18} />Астана, Казахстан</span>
+                        </div>
+
 
                         <button className='text-lg font-semibold w-52 p-4 bg-green-700/85 text-[#cfcfcf] hover:text-[#fff] cursor-none rounded-full hover:bg-green-700 hover:scale-[1.03] transition-all duration-200'>
                             Все проекты
