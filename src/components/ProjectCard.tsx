@@ -38,7 +38,7 @@ const ProjectCard = ({ imageUrl, title, description, badges, liveUrl, codeUrl }:
             </div>
 
             <div className='ml-auto mt-auto flex gap-3'>
-                <ButtonWrapper content='Live'>
+                <ButtonWrapper content='Посмотреть'>
                     <a
                         href={liveUrl}
                         target='_blank'
@@ -48,7 +48,7 @@ const ProjectCard = ({ imageUrl, title, description, badges, liveUrl, codeUrl }:
                     </a>
                 </ButtonWrapper>
 
-                <ButtonWrapper content='Code on Github'>
+                <ButtonWrapper content='Код на Github'>
                     <a
                         href={codeUrl}
                         target='_blank'
