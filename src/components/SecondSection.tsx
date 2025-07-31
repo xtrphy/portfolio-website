@@ -35,19 +35,17 @@ const SecondSection = () => {
                 <p className='text-[#444] text-center w-4xl text-2xl leading-9'>Владею многими современными технологиями, позволяющие создавать высоко-функциональные приложения и эстетичные веб-сайты.</p>
 
                 <div className='z-50 mt-5 grid grid-cols-4 gap-5 w-5xl'>
-                    <TechCard src='/react.webp' alt='React Logo' title='React' />
+                    <TechCard src='/react.webp' alt='React Logo' title='React' bgColor='bg-cyan-900' />
                     <TechCard src='/typescript.png' alt='TypeScript Logo' title='TypeScript' />
-                    <TechCard src='/nextjs.png' alt='Next.js Logo' title='Next.js' />
-                    <TechCard src='/tailwind.png' alt='Tailwind Logo' title='Tailwind' />
+                    <TechCard src='/nextjs.png' alt='Next.js Logo' title='Next.js' bgColor='bg-gray-800' />
+                    <TechCard src='/tailwind.png' alt='Tailwind Logo' title='Tailwind' bgColor='bg-200' />
                     <TechCard src='/redux.webp' alt='Redux Logo' title='Redux' />
                     <TechCard src='/git.webp' alt='Git Logo' title='Git' />
                     <TechCard src='/supabase.svg' alt='Supabase Logo' title='Supabase' />
                     <TechCard src='/expressjs.png' alt='Express.js Logo' title='Express.js' />
                 </div>
-
-                <span className='mt-2'>И другие...</span>
+                <span className='mt-1'>И другие...</span>
             </div>
-
         </section>
     );
 };
