@@ -31,10 +31,6 @@ const ParticlesBackground = () => {
         });
     }, []);
 
-    const particlesLoaded = async (container?: Container): Promise<void> => {
-        console.log(container);
-    };
-
     const options: ISourceOptions = useMemo(
         () => ({
             fpsLimit: 120,
@@ -78,7 +74,6 @@ const ParticlesBackground = () => {
             <div className="absolute inset-0 blur-[1.25px]">
                 <Particles
                     id="tsparticles"
-                    particlesLoaded={particlesLoaded}
                     options={options}
                 />
             </div>

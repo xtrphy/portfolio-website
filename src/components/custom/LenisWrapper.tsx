@@ -2,6 +2,7 @@
 
 import { useEffect } from "react";
 import Lenis from "lenis";
+import { setLenisInstance } from "@/utils/lenisInstance";
 
 const LenisWrapper = () => {
     useEffect(() => {
@@ -12,6 +13,8 @@ const LenisWrapper = () => {
             orientation: 'vertical',
             gestureOrientation: 'vertical',
         });
+
+        setLenisInstance(lenis);
 
         const raf = (time: number) => {
             lenis.raf(time);
