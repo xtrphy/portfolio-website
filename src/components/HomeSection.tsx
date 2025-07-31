@@ -16,6 +16,8 @@ const HomeSection = () => {
 
     return (
         <>
+            <div className="absolute top-0 left-0 w-full h-40 bg-gradient-to-b from-[#e0e0e0] to-transparent z-10 pointer-events-none" />
+
             <section
                 className='relative h-screen w-full flex items-center overflow-hidden'
                 ref={ref}
