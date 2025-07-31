@@ -3,7 +3,7 @@ import ProjectCard from './ProjectCard';
 
 const ProjectsSection = () => {
     return (
-        <section className='flex justify-center'>
+        <section className='flex justify-center' id='projects'>
 
             <div className='pt-32 pb-32 flex flex-col justify-center items-center gap-5 max-w-6xl'>
                 <h2 className='text-6xl font-black mb-10'>Проекты</h2>

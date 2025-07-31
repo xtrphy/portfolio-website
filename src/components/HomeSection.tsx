@@ -3,6 +3,7 @@ import React, { useRef } from 'react';
 import Image from 'next/image';
 import { Badge } from './ui/badge';
 import { CircleCheck, MapPin } from 'lucide-react';
+import { getLenisInstance } from '@/utils/lenisInstance';
 
 const HomeSection = () => {
     const ref = useRef(null);
@@ -13,6 +14,18 @@ const HomeSection = () => {
     });
 
     const y = useTransform(scrollYProgress, [0, 1], [150, -15]);
+
+    const handleClick = () => {
+        const lenis = getLenisInstance();
+        const section = document.getElementById('projects');
+
+        if (lenis && section) {
+            lenis.scrollTo(section, {
+                duration: 2,
+                easing: (t) => -(Math.cos(Math.PI * t) - 1) / 2,
+            });
+        }
+    };
 
     return (
         <section
@@ -64,7 +77,10 @@ const HomeSection = () => {
                     </div>
 
 
-                    <button className='text-lg font-semibold w-52 p-4 bg-green-700/85 text-[#cfcfcf] hover:text-[#fff] cursor-none rounded-full hover:bg-green-700 hover:scale-[1.03] transition-all duration-200'>
+                    <button
+                        onClick={handleClick}
+                        className='text-lg font-semibold w-52 p-4 bg-green-700/85 text-[#cfcfcf] hover:text-[#fff] cursor-none rounded-full hover:bg-green-700 hover:scale-[1.03] transition-all duration-200'
+                    >
                         Все проекты
                     </button>
                 </div>
