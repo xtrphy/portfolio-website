@@ -1,9 +1,9 @@
 'use client';
 
-import Footer from '@/components/Footer';
+// import Footer from '@/components/Footer';
 import HomeSection from '@/components/HomeSection';
-import ProjectsSection from '@/components/ProjectsSection';
-import StackSection from '@/components/StackSection';
+// import ProjectsSection from '@/components/ProjectsSection';
+// import StackSection from '@/components/StackSection';
 import { motion } from 'framer-motion';
 
 const Home = () => {
@@ -15,9 +15,9 @@ const Home = () => {
             transition={{ duration: 1 }}
         >
             <HomeSection />
-            <StackSection />
-            <ProjectsSection />
-            <Footer />
+            {/* <StackSection /> */}
+            {/* <ProjectsSection /> */}
+            {/* <Footer /> */}
         </motion.main>
     );
 };
