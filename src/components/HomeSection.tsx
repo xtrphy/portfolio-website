@@ -102,7 +102,7 @@ const HomeSection = () => {
                 }}
             >
                 <Image
-                    src='/glass_woman1.png'
+                    src='/glass_woman1.webp'
                     alt='Glass woman'
                     width={900}
                     height={900}

@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { useRef } from 'react';
 import TechCard from './custom/TechCard';
 
-const SecondSection = () => {
+const StackSection = () => {
     const ref = useRef(null);
 
     const { scrollYProgress } = useScroll({
@@ -21,7 +21,7 @@ const SecondSection = () => {
                 style={{ y }}
             >
                 <Image
-                    src='/glass_woman4.png'
+                    src='/glass_woman4.webp'
                     alt='Glass woman'
                     width={615}
                     height={615}
@@ -42,7 +42,7 @@ const SecondSection = () => {
                     <TechCard src='/redux.webp' alt='Redux Logo' title='Redux' />
                     <TechCard src='/git.webp' alt='Git Logo' title='Git' />
                     <TechCard src='/supabase.svg' alt='Supabase Logo' title='Supabase' />
-                    <TechCard src='/expressjs.png' alt='Express.js Logo' title='Express.js' />
+                    <TechCard src='/expressjs.webp' alt='Express.js Logo' title='Express.js' />
                 </div>
 
                 <span>
@@ -56,4 +56,4 @@ const SecondSection = () => {
     );
 };
 
-export default SecondSection;
+export default StackSection;
