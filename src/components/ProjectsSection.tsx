@@ -10,7 +10,7 @@ const ProjectsSection = () => {
 
                 <div className='grid gap-6 grid-cols-3'>
                     <ProjectCard
-                        imageUrl='/pddapp-laptop.png'
+                        imageUrl='/pddapp-laptop.webp'
                         title='"Кулагер" ПДД Тесты'
                         description='Приложение для решения ПДД тестов, подготовки к реальному тестированию. Таблицы и графики позволят отслеживать ваш прогресс.'
                         badges={['Next.js', 'TypeScript', 'Supabase', 'Tailwind', 'Redux Toolkit', 'Cloudinary', 'shadcn/ui']}
@@ -19,7 +19,7 @@ const ProjectsSection = () => {
                     />
 
                     <ProjectCard
-                        imageUrl='/vk-analog-laptop.png'
+                        imageUrl='/vk-analog-laptop.webp'
                         title='VK Analog (ВКоннекте)'
                         description='Аналог социальной сети ВКонтакте. Пользователи могут публиковать посты, ставить лайки, комментировать, подписываться на людей и управлять своим профилем.'
                         badges={['React', 'Express', 'Prisma', 'PostgreSQL', 'Cloudinary', 'GitHub OAuth']}
@@ -28,7 +28,7 @@ const ProjectsSection = () => {
                     />
 
                     <ProjectCard
-                        imageUrl='/mindmates-laptop.png'
+                        imageUrl='/mindmates-laptop.webp'
                         title='MindMates Project'
                         description='Приложение для поддержания ментального здоровья. Делайте записи, управляйте своими мыслями и привычками.'
                         badges={['Next.js', 'TypeScript', 'Prisma', 'PostgreSQL', 'Tailwind', 'shadcn/ui']}
@@ -37,7 +37,7 @@ const ProjectsSection = () => {
                     />
 
                     <ProjectCard
-                        imageUrl='/extrahands-laptop.png'
+                        imageUrl='/extrahands-laptop.webp'
                         title='Extra Hands Team'
                         description='Сайт посвященный игровой модификации для популярной визуальной новеллы "Зайчик", разрабатываемая командой Extra Hands.'
                         badges={['Next.js', 'TypeScript', 'Tailwind', 'shadcn/ui']}
@@ -46,7 +46,7 @@ const ProjectsSection = () => {
                     />
 
                     <ProjectCard
-                        imageUrl='/vaultix-laptop.png'
+                        imageUrl='/vaultix-laptop.webp'
                         title='Google Drive Analog'
                         description='Vaultix - аналог облачного хранилища от Google. Сохраняйте файлы, создавайте папки и делитесь ими с друзьями и коллегами.'
                         badges={['EJS', 'Express', 'Prisma', 'PostgreSQL', 'Express-session', 'Passport', 'bcrypt', 'Cloudinary', 'shadcn/ui']}
@@ -54,7 +54,7 @@ const ProjectsSection = () => {
                     />
 
                     <ProjectCard
-                        imageUrl='/blog-laptop.png'
+                        imageUrl='/blog-laptop.webp'
                         title='Xtrphy Blog'
                         description='Личный блог с публикациями на тему веб-разработки. Админ-панель для управления контентом постов. Пишите комментарии и обсуждайте разные темы.'
                         badges={['React', 'Express', 'REST API', 'Context API', 'CSS Modules']}
