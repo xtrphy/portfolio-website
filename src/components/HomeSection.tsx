@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { Badge } from './ui/badge';
 import { CircleCheck, MapPin } from 'lucide-react';
 import { getLenisInstance } from '@/utils/lenisInstance';
+import SocialMedia from './custom/SocialMedia';
 
 const HomeSection = () => {
     const ref = useRef(null);
@@ -36,7 +37,10 @@ const HomeSection = () => {
 
             <div className='ml-[120px] flex flex-col gap-10 text-7xl'>
                 <h1 className='italic font-black'>
-                    <span>Владислав Перепечкин</span>
+                    <span>
+                        <SocialMedia containerClassName='ml-3 mb-3' className='hover:text-black' />
+                        Владислав Перепечкин
+                    </span>
 
                     <motion.div
                         style={{ y }}
@@ -70,9 +74,9 @@ const HomeSection = () => {
 
                 <div className='flex items-start gap-3 mt-5'>
                     <div className='flex flex-col items-center gap-2'>
-                        <button className='text-lg font-semibold w-52 p-4 bg-[#444]/85 text-[#cfcfcf] hover:text-[#fff] cursor-none rounded-full hover:bg-[#444] hover:scale-[1.03] transition-all duration-200'>
+                        <a href='https://t.me/xtrphy1' target='_blank' className='text-lg text-center font-semibold w-52 p-4 bg-[#444]/85 text-[#cfcfcf] hover:text-[#fff] cursor-none rounded-full hover:bg-[#444] hover:scale-[1.03] transition-all duration-200'>
                             Связаться
-                        </button>
+                        </a>
                         <span className='flex items-center gap-1 text-sm font-bold text-[#444]'><MapPin size={18} />Астана, Казахстан</span>
                     </div>
 

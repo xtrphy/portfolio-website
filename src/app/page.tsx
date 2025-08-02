@@ -1,5 +1,6 @@
 'use client';
 
+import Footer from '@/components/Footer';
 import HomeSection from '@/components/HomeSection';
 import ProjectsSection from '@/components/ProjectsSection';
 import SecondSection from '@/components/StackSection';
@@ -16,6 +17,7 @@ const Home = () => {
             <HomeSection />
             <SecondSection />
             <ProjectsSection />
+            <Footer />
         </motion.main>
     );
 };

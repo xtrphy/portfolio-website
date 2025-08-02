@@ -27,8 +27,6 @@ const SecondSection = () => {
                     height={615}
                     className='pointer-events-none select-none fade-bottom'
                 />
-
-
             </motion.div>
 
             <div className='pt-32 h-full flex flex-col justify-center items-center gap-5 max-w-6xl'>
