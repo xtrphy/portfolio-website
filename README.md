@@ -1,6 +1,6 @@
 # My Portfolio Website
 
-A portfolio website that showcases my key skills, the technologies I use and my latest and greatest projectsю
+A portfolio website that showcases my key skills, the technologies I use and my latest and greatest projects
 
 [![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge&logo=netlify)](https://portfolio-website-five-indol-35.vercel.app/)
 
