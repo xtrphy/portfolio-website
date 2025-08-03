@@ -30,7 +30,7 @@ const HomeSection = () => {
 
     return (
         <section
-            className='relative min-h-screen flex items-center overflow-hidden px-4 md:px-0'
+            className='relative min-h-screen flex items-center overflow-hidden px-4 lg:px-0'
             ref={ref}
         >
             <div className="absolute top-0 left-0 w-full h-20 sm:h-40 bg-gradient-to-b from-[#e0e0e0] to-transparent z-10 pointer-events-none" />

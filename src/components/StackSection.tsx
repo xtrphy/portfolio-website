@@ -15,7 +15,7 @@ const StackSection = () => {
 
     return (
         <section
-            className='relative min-h-screen flex justify-center items-center px-4 md:px-0'
+            className='relative min-h-screen flex justify-center items-center px-4 lg:px-0'
             ref={ref}
         >
 
