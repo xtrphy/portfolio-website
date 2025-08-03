@@ -31,7 +31,7 @@ const ProjectCard = ({ imageUrl, title, description, badges, liveUrl, codeUrl }:
 
             <div className='flex flex-wrap lg:w-[420px] gap-2'>
                 {badges.map((badge, index) => (
-                    <Badge key={index} className='py-2 px-3 bg-[#333] backdrop-blur-md hover:bg-[#555] transition-colors duration-200'>
+                    <Badge key={index} className='py-2 px-3 bg-[#333] backdrop-blur-md hover:bg-[#555] transition-colors duration-200 select-none'>
                         {badge}
                     </Badge>
                 ))}
@@ -43,7 +43,7 @@ const ProjectCard = ({ imageUrl, title, description, badges, liveUrl, codeUrl }:
                         <a
                             href={liveUrl}
                             target='_blank'
-                            className='flex items-center justify-center bg-white/70 w-10 h-10 p-2 rounded-md cursor-none hover:bg-gray-100 transition-colors duration-150'
+                            className='flex items-center justify-center bg-white/70 w-10 h-10 p-2 rounded-md hover:bg-gray-100 transition-colors duration-150'
                         >
                             <MoveUpRight />
                         </a>
@@ -55,7 +55,7 @@ const ProjectCard = ({ imageUrl, title, description, badges, liveUrl, codeUrl }:
                         <a
                             href={codeUrl}
                             target='_blank'
-                            className='flex items-center w-10 h-10 justify-center bg-white/70 p-2 rounded-md cursor-none hover:bg-gray-100 transition-colors duration-150'
+                            className='flex items-center w-10 h-10 justify-center bg-white/70 p-2 rounded-md hover:bg-gray-100 transition-colors duration-150'
                         >
                             <FaGithub size={30} />
                         </a>
