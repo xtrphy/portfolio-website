@@ -7,7 +7,7 @@ const Footer = () => {
             <span className='text-sm sm:text-base font-extralight'>
                 <span className='mr-0.5'>Владислав</span> Перепечкин
             </span>
-            <SocialMedia className='text-[#e0e0e0] hover:text-[#888]' />
+            <SocialMedia className='text-[#e0e0e0] hover:text-[#888] z-100' />
         </footer>
     );
 };
