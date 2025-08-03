@@ -4,19 +4,30 @@ import { useState, useEffect } from "react";
 
 const CustomCursor = () => {
     const [position, setPosition] = useState({ x: 0, y: 0 });
+    const [isMobile, setIsMobile] = useState<boolean | null>(null);
 
     useEffect(() => {
+        const isTouchDevice =
+            typeof window !== 'undefined' &&
+            ('ontouchstart' in window || navigator.maxTouchPoints > 0);
+
+        setIsMobile(isTouchDevice);
+
+        if (isTouchDevice) return;
+
         const moveHandler = (e: MouseEvent) => {
             setPosition({ x: e.clientX, y: e.clientY });
         };
 
         window.addEventListener('mousemove', moveHandler);
-
         return () => {
             window.removeEventListener('mousemove', moveHandler);
-        }
-
+        };
     }, []);
+
+    if (isMobile === null) return null;
+
+    if (isMobile) return null;
 
     return (
         <div
