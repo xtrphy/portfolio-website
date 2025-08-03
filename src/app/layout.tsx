@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Manrope } from "next/font/google";
 import "./globals.css";
-import CustomCursor from "@/components/custom/CustomCursor";
 import LenisWrapper from "@/components/custom/LenisWrapper";
 import ParticlesBackground from "@/components/custom/ParticlesBackground";
 
@@ -30,7 +29,6 @@ export default function RootLayout({
             >
                 <ParticlesBackground />
                 <LenisWrapper />
-                <CustomCursor />
                 {children}
             </body>
         </html>

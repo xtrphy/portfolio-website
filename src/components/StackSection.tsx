@@ -53,7 +53,7 @@ const StackSection = () => {
                     <a
                         href="https://github.com/xtrphy"
                         target='_blank'
-                        className='text-[#777] font-medium hover:underline cursor-none'
+                        className='text-[#777] font-medium hover:underline'
                     >
                         GitHub</a>
                 </span>

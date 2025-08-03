@@ -18,7 +18,7 @@ const TechCard = ({ src, alt, title, bgColor }: TechCardProps) => {
                 height={40}
                 className={`${bgColor} w-8 h-8 sm:w-10 sm:h-10 rounded-md p-1 sm:p-1.5`}
             />
-            <span className='text-[#121212] text-xs sm:text-lg font-medium'>{title}</span>
+            <span className='text-[#121212] text-xs sm:text-lg font-medium select-none'>{title}</span>
         </div>
     );
 };

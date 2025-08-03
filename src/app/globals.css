@@ -3,10 +3,6 @@
 
 @custom-variant dark (&:is(.dark *));
 
-body {
-    cursor: none;
-}
-
 ::selection {
     background-color: #444444;
     color: #E0E0E0;

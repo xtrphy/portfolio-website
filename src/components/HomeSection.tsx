@@ -46,16 +46,16 @@ const HomeSection = () => {
                         style={{ y }}
                         className='hidden lg:block'
                     >
-                        <Badge className='absolute lg:-top-17 lg:-right-65 xl:-top-15 xl:-right-55 2xl:-right-40 -rotate-2 text-base bg-white/10 backdrop-blur-sm text-[#444] border border-white/30 shadow-md px-4 py-1 rounded-xl ring-1 ring-white/20 hover:-rotate-4 hover:scale-103 hover:ring-black transition-all duration-200'>
+                        <Badge className='absolute lg:-top-17 lg:-right-65 xl:-top-15 xl:-right-55 2xl:-right-40 -rotate-2 text-base bg-white/10 backdrop-blur-sm text-[#444] border border-white/30 shadow-md px-4 py-1 rounded-xl ring-1 ring-white/20 hover:-rotate-4 hover:scale-103 hover:ring-black transition-all duration-200 select-none'>
                             фронтенд разработчик
                         </Badge>
-                        <Badge className='absolute lg:-top-7 lg:-right-65 xl:-top-5 xl:-right-55 2xl:-right-40 -rotate-2 text-base bg-white/10 backdrop-blur-sm text-[#444] border border-white/30 shadow-md px-4 py-1 rounded-xl ring-1 ring-white/20 hover:rotate-0 hover:scale-103 hover:ring-black transition-all duration-200'>
+                        <Badge className='absolute lg:-top-7 lg:-right-65 xl:-top-5 xl:-right-55 2xl:-right-40 -rotate-2 text-base bg-white/10 backdrop-blur-sm text-[#444] border border-white/30 shadow-md px-4 py-1 rounded-xl ring-1 ring-white/20 hover:rotate-0 hover:scale-103 hover:ring-black transition-all duration-200 select-none'>
                             довольный клиент
                         </Badge>
-                        <Badge className='absolute lg:top-3 lg:-right-65 xl:top-5 xl:-right-55 2xl:-right-40 -rotate-2 text-base bg-white/10 backdrop-blur-sm text-[#444] border border-white/30 shadow-md px-4 py-1 rounded-xl ring-1 ring-white/20 hover:-rotate-4 hover:scale-103 hover:ring-black transition-all duration-200'>
+                        <Badge className='absolute lg:top-3 lg:-right-65 xl:top-5 xl:-right-55 2xl:-right-40 -rotate-2 text-base bg-white/10 backdrop-blur-sm text-[#444] border border-white/30 shadow-md px-4 py-1 rounded-xl ring-1 ring-white/20 hover:-rotate-4 hover:scale-103 hover:ring-black transition-all duration-200 select-none'>
                             командная работа
                         </Badge>
-                        <Badge className='absolute lg:top-13 lg:-right-65 xl:top-15 xl:-right-55 2xl:-right-40 -rotate-2 text-base bg-white/10 backdrop-blur-sm text-[#444] border border-white/30 shadow-md px-4 py-1 rounded-xl ring-1 ring-white/20 hover:rotate-0 hover:scale-103 hover:ring-black transition-all duration-200'>
+                        <Badge className='absolute lg:top-13 lg:-right-65 xl:top-15 xl:-right-55 2xl:-right-40 -rotate-2 text-base bg-white/10 backdrop-blur-sm text-[#444] border border-white/30 shadow-md px-4 py-1 rounded-xl ring-1 ring-white/20 hover:rotate-0 hover:scale-103 hover:ring-black transition-all duration-200 select-none'>
                             ответственность
                         </Badge>
                     </motion.div>
@@ -75,7 +75,7 @@ const HomeSection = () => {
 
                 <div className='flex flex-col md:flex-row md:items-start items-center gap-3 mt-2 sm:mt-3 lg:mt-5'>
                     <div className='flex flex-col  items-center gap-2'>
-                        <a href='https://t.me/xtrphy1' target='_blank' className='order-2 md:order-1 md:text-lg text-center font-semibold w-52 p-4 bg-[#444]/85 text-[#cfcfcf] hover:text-[#fff] cursor-none rounded-full hover:bg-[#444] hover:scale-[1.03] transition-all duration-200'>
+                        <a href='https://t.me/xtrphy1' target='_blank' className='order-2 md:order-1 md:text-lg text-center font-semibold w-52 p-4 bg-[#444]/85 text-[#cfcfcf] hover:text-[#fff] rounded-full hover:bg-[#444] hover:scale-[1.03] transition-all duration-200'>
                             Связаться
                         </a>
                         <span className='order-1 md:order-2 flex items-center gap-1 text-sm font-bold text-[#444]'><MapPin size={18} />Астана, Казахстан</span>
@@ -84,7 +84,7 @@ const HomeSection = () => {
 
                     <button
                         onClick={handleClick}
-                        className='text-lg font-semibold w-52 p-4 bg-green-700/85 text-[#cfcfcf] hover:text-[#fff] cursor-none rounded-full hover:bg-green-700 hover:scale-[1.03] transition-all duration-200'
+                        className='text-lg font-semibold w-52 p-4 bg-green-700/85 text-[#cfcfcf] hover:text-[#fff] cursor-pointer rounded-full hover:bg-green-700 hover:scale-[1.03] transition-all duration-200'
                     >
                         Все проекты
                     </button>

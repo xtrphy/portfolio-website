@@ -20,7 +20,7 @@ const SocialMedia = ({ containerClassName, className }: SocialMediaProps) => {
                     key={label}
                     href={href}
                     target='_blank'
-                    className={`hover:scale-115 transition-all duration-200 cursor-none ${className}`}
+                    className={`hover:scale-115 transition-all duration-200 ${className}`}
                 >
                     {icon}
                 </a>
