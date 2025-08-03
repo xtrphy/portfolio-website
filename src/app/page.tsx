@@ -2,7 +2,7 @@
 
 // import Footer from '@/components/Footer';
 import HomeSection from '@/components/HomeSection';
-// import ProjectsSection from '@/components/ProjectsSection';
+import ProjectsSection from '@/components/ProjectsSection';
 import StackSection from '@/components/StackSection';
 import { motion } from 'framer-motion';
 
@@ -16,7 +16,7 @@ const Home = () => {
         >
             <HomeSection />
             <StackSection />
-            {/* <ProjectsSection /> */}
+            <ProjectsSection />
             {/* <Footer /> */}
         </motion.main>
     );

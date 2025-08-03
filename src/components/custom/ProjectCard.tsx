@@ -16,20 +16,20 @@ interface ProjectCardProps {
 
 const ProjectCard = ({ imageUrl, title, description, badges, liveUrl, codeUrl }: ProjectCardProps) => {
     return (
-        <div className='flex flex-col justify-start gap-3 w-[535px] rounded-2xl p-8 transition-transform duration-400 hover:scale-[1.015] bg-gradient-to-br from-[#a0a0a0]/90 to-[#0c0c0c]/50 backdrop-blur-xl border border-white/10 shadow-lg'>
+        <div className='flex flex-col justify-start gap-3 lg:max-w-[535px] rounded-2xl p-5 md:p-7 lg:p-8 transition-transform duration-400 hover:scale-[1.015] bg-gradient-to-br from-[#a0a0a0]/90 to-[#0c0c0c]/50 backdrop-blur-xl border border-white/10 shadow-lg'>
             <Image
                 src={imageUrl}
                 alt={title}
                 width={470}
                 height={470}
-                className='rounded-xl object-cover'
+                className='mx-auto rounded-xl object-cover'
             />
 
-            <h3 className='text-white text-2xl font-semibold mt-1'>{title}</h3>
+            <h3 className='text-white text-xl lg:text-2xl font-semibold mt-1'>{title}</h3>
 
-            <p className='text-[15px] text-[#e0e0e0] mb-3 tracking-wide leading-5'>{description}</p>
+            <p className='text-sm lg:text-[15px] text-[#e0e0e0] mb-3 tracking-wide leading-5'>{description}</p>
 
-            <div className='flex flex-wrap w-[420px] gap-2'>
+            <div className='flex flex-wrap lg:w-[420px] gap-2'>
                 {badges.map((badge, index) => (
                     <Badge key={index} className='py-2 px-3 bg-[#333] backdrop-blur-md hover:bg-[#555] transition-colors duration-200'>
                         {badge}

@@ -3,12 +3,15 @@ import ProjectCard from './custom/ProjectCard';
 
 const ProjectsSection = () => {
     return (
-        <section className='relative flex justify-center overflow-clip' id='projects'>
+        <section
+            className='relative min-h-screen flex justify-center items-center overflow-clip px-4'
+            id='projects'
+        >
 
             <div className='pb-16 pt-32 flex flex-col justify-center items-center gap-5'>
-                <h2 className='text-6xl font-black mb-10'>Проекты</h2>
+                <h2 className='text-3xl sm:text-4xl lg:text-5xl 2xl:text-6xl font-black mb-10'>Проекты</h2>
 
-                <div className='grid gap-6 grid-cols-3'>
+                <div className='grid gap-6 grid-cols-1 sm:grid-cols-2 2xl:grid-cols-3'>
                     <ProjectCard
                         imageUrl='/pddapp-laptop.webp'
                         title='"Кулагер" ПДД Тесты'
