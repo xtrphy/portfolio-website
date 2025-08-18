@@ -10,10 +10,25 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-    title: "XTRPHY Portfolio",
-    description: "Welcome to my Portfolio page!",
+    title: "Vladislav Perepechkin - Frontend Developer",
+    description: "Моё портфолио: все проекты и стек технологий",
     icons: {
         icon: '/favicon.webp',
+    },
+    openGraph: {
+        title: "Vladislav Perepechkin - Frontend Developer",
+        description: "Моё портфолио: все проекты и стек технологий",
+        url: "https://xtrphy-portfolio.com",
+        siteName: "xtrphy-portfolio.com",
+        images: [
+            {
+                url: "https://xtrphy-portfolio.com/glass_woman1.webp",
+                width: 1200,
+                height: 630,
+            },
+        ],
+        locale: "ru_RU",
+        type: "website",
     },
 };
 
