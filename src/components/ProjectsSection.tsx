@@ -22,6 +22,15 @@ const ProjectsSection = () => {
                     />
 
                     <ProjectCard
+                        imageUrl='/car-marketplace-laptop.webp'
+                        title='Моторум.kz'
+                        description='Маркетплейс для продажи и покупки автомобилей. Используйте фильтры для поиска нужной машины, публикуйте свои объявления с подробной информацией о вашем транспорте, спецтехнике, запчасти.'
+                        badges={['Next.js', 'TypeScript', 'Supabase', 'Tailwind', 'Cloudinary', 'Numeral']}
+                        liveUrl='https://car-marketplace-pi.vercel.app/cars'
+                        codeUrl='https://github.com/xtrphy/car-marketplace'
+                    />
+
+                    <ProjectCard
                         imageUrl='/vk-analog-laptop.webp'
                         title='VK Analog (ВКоннекте)'
                         description='Аналог социальной сети ВКонтакте. Пользователи могут публиковать посты, ставить лайки, комментировать, подписываться на людей и управлять своим профилем.'
@@ -54,14 +63,6 @@ const ProjectsSection = () => {
                         description='Vaultix - аналог облачного хранилища от Google. Сохраняйте файлы, создавайте папки и делитесь ими с друзьями и коллегами.'
                         badges={['EJS', 'Express', 'Prisma', 'PostgreSQL', 'Express-session', 'Passport', 'bcrypt', 'Cloudinary', 'shadcn/ui']}
                         codeUrl='https://github.com/xtrphy/file-uploader'
-                    />
-
-                    <ProjectCard
-                        imageUrl='/blog-laptop.webp'
-                        title='Xtrphy Blog'
-                        description='Личный блог с публикациями на тему веб-разработки. Админ-панель для управления контентом постов. Пишите комментарии и обсуждайте разные темы.'
-                        badges={['React', 'Express', 'REST API', 'Context API', 'CSS Modules']}
-                        codeUrl='https://github.com/xtrphy/blog-fullstack'
                     />
                 </div>
             </div>
